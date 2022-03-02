@@ -7,17 +7,16 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import CheesesList from "./pages/CheesesList";
+import CheeseDetail from "./pages/CheeseDetail";
+import CheeseCreate from "./pages/CheeseCreate";
 
 render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<CheesesList />} />
-        {/* <Route path="teams" element={<Teams />}>
-          <Route path=":teamId" element={<Team />} />
-          <Route path="new" element={<NewTeamForm />} />
-          <Route index element={<LeagueStandings />} />
-        </Route> */}
+        <Route path="/cheeses/:id" element={<CheeseDetail />} />
+        <Route path="/cheeses/create" element={<CheeseCreate />} />
       </Route>
     </Routes>
   </BrowserRouter>,

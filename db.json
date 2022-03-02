@@ -1,0 +1,179 @@
+{
+  "cheeses": [
+    {
+      "id": 1,
+      "name": "Camembert",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Camembert_%28Cheese%29.jpg/390px-Camembert_%28Cheese%29.jpg",
+      "description": "Camembert est une appellation générique qui désigne généralement un fromage à pâte molle et à croûte fleurie. Commercialement, cette appellation d'origine normande ne fait l'objet d'aucune protection et se voit utilisée pour des fromages n'ayant parfois que peu de rapport avec le camembert originel. Dans certaines régions de France, le camembert est appelé « claquos », « calendos » ou « camembos » ou cadendos ou cadenli ou cadenil et dans le Jura, il est appelé Comté coulant.",
+      "area": "Normandie",
+      "milkType": 1,
+      "vote": 0
+    },
+    {
+      "name": "Comté",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Comte_AOP.jpg/375px-Comte_AOP.jpg",
+      "description": "Comté est l'appellation d'origine d'un fromage français transformé principalement en Franche-Comté et bénéficiant d'une AOC depuis 1958 et d'une AOP depuis 1996. Son aire de production s'étend dans les départements du Jura, du Doubs et l'est de l'Ain et de la Saône et Loire.",
+      "area": "Franche-Comté",
+      "vote": 0,
+      "id": 2,
+      "milkType": 1
+    },
+    {
+      "name": "Mozarella di Buffala",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mozzarella_cheese_%281%29.jpg/390px-Mozzarella_cheese_%281%29.jpg",
+      "description": "La mozzarella ou mozzarelle est un fromage à pâte filée traditionnel de la cuisine italienne, à base de lait de vache ou de bufflonne. La mozzarella di Bufala Campana, produite en Campanie avec du lait de bufflonne, est l'objet d'une appellation d'origine protégée italienne (AOP) depuis 1996.",
+      "area": "Campanie",
+      "vote": 0,
+      "id": 3,
+      "milkType": 4
+    },
+    {
+      "name": "Saint-Nectaire",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Saint-Nectaire.jpg/260px-Saint-Nectaire.jpg",
+      "description": "Saint-nectaire est une appellation d'origine désignant un fromage français de lait de vache fabriqué dans la micro-région des Monts Dore, pays à cheval sur les départements du Cantal et du Puy-de-Dôme en France. Le savoir-faire des artisans du Saint-Nectaire a été reconnu par le ministère de la Culture est inscrit à l'inventaire du patrimoine culturel immatériel en France en 2019.",
+      "area": "Cantal",
+      "milkType": 1,
+      "vote": 0,
+      "id": 4
+    },
+    {
+      "name": "Rocamadour",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/9/90/Rocamadour_AOP.jpg",
+      "description": "Le rocamadour est un fromage français de chèvre au lait cru entier. Il appartient à la famille des cabécous. Il est ou a été aussi appelé « cabécou de Rocamadour ».\n\nCe fromage au lait cru est produit dans le Quercy et l'appellation « rocamadour » seule est protégée grâce à une AOC depuis 1995. Cette appellation a pour origine la commune de Rocamadour dans le département du Lot. ",
+      "area": "Lot",
+      "milkType": 2,
+      "vote": 0,
+      "id": 5
+    },
+    {
+      "name": "Charolais",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Fromage_charolais.jpg/260px-Fromage_charolais.jpg",
+      "description": "Charolais est une appellation d'origine française désignant un fromage au lait cru de chèvre, à pâte molle à croûte naturelle. Originaire des collines du Charolais et du Brionnais, en Bourgogne, ce fromage est aujourd'hui produit dans certaines communes de Saône-et-Loire majoritairement, mais aussi dans l'Allier, la Loire et le Rhône. ",
+      "area": "Saône-Et-Loire",
+      "milkType": 2,
+      "vote": 0,
+      "id": 6
+    },
+    {
+      "name": "Chevrotin",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Chevrotin_des_Aravis_%28avril_2021%29_-_2.jpg/260px-Chevrotin_des_Aravis_%28avril_2021%29_-_2.jpg",
+      "description": "Le chevrotin est un fromage fermier au lait cru de chèvre des départements de Savoie et Haute-Savoie. Cette appellation d'origine française bénéficie de préservation grâce à une appellation d'origine contrôlée depuis mai 2002 et appellation d'origine protégée depuis 2005. ",
+      "area": "Savoie",
+      "milkType": 2,
+      "vote": 0,
+      "id": 7
+    },
+    {
+      "name": "Pélardon",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/P%C3%A9lardon_12.jpg/220px-P%C3%A9lardon_12.jpg",
+      "description": "Le pélardon est un très petit fromage au lait cru de chèvre de la région du Languedoc protégé par une AOC.\n\nDepuis août 2000, pour un fromage, l'usage commercial de l'appellation « pélardon » est soumis au respect d'un cahier des charges attaché à une AOC. ",
+      "area": "Languedoc",
+      "milkType": 2,
+      "vote": 0,
+      "id": 8
+    },
+    {
+      "name": "Crottin de Chavignol",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Crottin_02.jpg/260px-Crottin_02.jpg",
+      "description": "Le crottin de Chavignol est un fromage de chèvre français originaire du village berrichon de Chavignol situé dans le département du Cher, la région Centre-Val de Loire et la région naturelle du Sancerrois. ",
+      "area": "Cher",
+      "milkType": 2,
+      "vote": 0,
+      "id": 9
+    },
+    {
+      "name": "Brin d'Amour",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Wikicheese_-_Fleur_du_Maquis_-_20150417_-_005.jpg/260px-Wikicheese_-_Fleur_du_Maquis_-_20150417_-_005.jpg",
+      "description": "Brin d'amour, aussi appelé « fleur du maquis » ou « petit corse », est un fromage laitier de lait cru de brebis corse créé dans les années 1950. La marque commerciale « Brin d'Amour » appartient à la SARL World Impex, entreprise de négoce agroalimentaire interentreprises basée à Bessancourt dans le Val-d'Oise. La fabrication de ce fromage est sous-traitée par la SARL Germain Frères (Corselait), laiterie de la commune de Furiani dans la Haute-Corse en France. ",
+      "area": "Corse",
+      "milkType": 3,
+      "vote": 0,
+      "id": 10
+    },
+    {
+      "name": "Etorki",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Fromage_Etorki.jpg/260px-Fromage_Etorki.jpg",
+      "description": "Etorki (origine en basque) est une marque commerciale de fromage industriel français fabriqué au pays basque français dans l'ancienne province de la Soule (Mauléon-Licharre dans les Pyrénées-Atlantiques) par la fromagerie des Chaumes filiale du groupe Savencia Fromage & Dairy.",
+      "area": "Mauléon-Licharre",
+      "milkType": 3,
+      "vote": 0,
+      "id": 11
+    },
+    {
+      "name": "Faisselle",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Faisselle_%26_confiture_de_lait.jpg/260px-Faisselle_%26_confiture_de_lait.jpg",
+      "description": "La faisselle est une appellation générique française désignant du fromage frais au lait cru qui prend son nom du moule à fromage dans lequel il s'égoutte : la faisselle.",
+      "area": "Berry",
+      "milkType": 3,
+      "vote": 0,
+      "id": 12
+    },
+    {
+      "name": "Feta",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Feta_Greece_2.jpg/260px-Feta_Greece_2.jpg",
+      "description": "Feta ou Féta (en grec moderne : φέτα) désigne un fromage caillé en saumure originaire de Grèce. Le nom de ce fromage est un emprunt à l’italien « fetta » (tranche) qui daterait du XVIIe siècle. L’appellation « feta » associée au fromage est attestée au XIXe siècle. Elle caractérise un fromage produit selon des techniques précises. Ce type de fromage est traditionnellement fabriqué à partir de lait de brebis, parfois en association avec du lait de chèvre. ",
+      "area": "Grèce",
+      "milkType": 3,
+      "vote": 0,
+      "id": 13
+    },
+    {
+      "name": "Ossau-Iraty",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Fromages_Ossau-Iraty_003.jpg/260px-Fromages_Ossau-Iraty_003.jpg",
+      "description": "Ossau-Iraty est l'appellation d'origine d'un fromage français de lait de brebis à pâte pressée non cuite fabriqué dans le Pays basque français et le Béarn.\n\nCette appellation a pour origine le pic du Midi d'Ossau et la forêt d'Iraty et est commercialement préservée via une AOC depuis 1980 et une AOP depuis 1996. ",
+      "area": "Pyrénées-Atlantique",
+      "milkType": 3,
+      "vote": 0,
+      "id": 14
+    },
+    {
+      "name": "Pécorino",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Pecorino_di_Filiano.jpg/220px-Pecorino_di_Filiano.jpg",
+      "description": "Le pecorino est un fromage italien au lait de brebis (pecora en italien). ",
+      "area": "Italie",
+      "milkType": 3,
+      "vote": 0,
+      "id": 15
+    },
+    {
+      "name": "Roquefort",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Wikicheese_-_Roquefort_-_20150417_-_002.jpg/260px-Wikicheese_-_Roquefort_-_20150417_-_002.jpg",
+      "description": "Roquefort [ʁɔk(ə)fɔːʁ] ou ròcafòrt en occitan rouergat est une appellation d'origine désignant un fromage français à pâte persillée élaborée exclusivement avec des laits crus de brebis.\n\nSa meilleure période de consommation s'étend de janvier à août.\n\nCe fromage est mentionné expressément pour la première fois au XIe siècle, ce qui en fait un symbole historique de la région des causses et vallées de l'Aveyron. Cette région rurale, établie sur un terroir parfois très difficile à exploiter, en a fait sa richesse financière et culturelle. ",
+      "area": "Aveyron",
+      "milkType": 3,
+      "vote": 0,
+      "id": 16
+    },
+    {
+      "name": "Zamorano",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Zamorano_Jon_Sullivan.jpg/260px-Zamorano_Jon_Sullivan.jpg",
+      "description": "Le Zamorano ou fromage Zamorano, en espagnol : queso Zamorano, est un fromage au lait de brebis AOP fabriqué dans la province de Zamora, en Espagne. Ce fromage à pâte dure est consommé en général après 6 mois d'affinage. Au cours de cette phase d'affinage, les fromages sont régulièrement retournés et frottés avec de l'huile d'olive ce qui contribue à donner une couleur foncée à la croûte. On attribue le goût de ce fromage à la race des brebis (churra (en) et brebis castillane), à la météo de la région et au vieillissement en cave. ",
+      "area": "Espagne",
+      "milkType": 3,
+      "vote": 0,
+      "id": 17
+    }
+  ],
+  "milkTypes": [
+    {
+      "id": 1,
+      "name": "Vache"
+    },
+    {
+      "id": 2,
+      "name": "Chèvre"
+    },
+    {
+      "id": 3,
+      "name": "Brebis"
+    },
+    {
+      "id": 4,
+      "name": "Bufflonne"
+    },
+    {
+      "id": 5,
+      "name": "Autre"
+    }
+  ]
+}

@@ -1,14 +1,14 @@
 const MainLayout = ({ children }) => {
   return (
     <>
-      <div class="navbar bg-base-100">
-        <div class="flex-1">
-          <a href="/" class="btn btn-ghost normal-case text-xl">
+      <div className="navbar bg-base-100">
+        <div className="flex-1">
+          <a href="/" className="btn btn-ghost normal-case text-xl">
             FromageContest
           </a>
         </div>
-        <div class="flex-none">
-          <ul class="menu menu-horizontal p-0">
+        <div className="flex-none">
+          <ul className="menu menu-horizontal p-0">
             <li>
               <a href="/">Fromages</a>
             </li>

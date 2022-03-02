@@ -1,8 +1,19 @@
-const CheesesList = () => {
+import { Link } from "react-router-dom";
+import CheesesListItem from "./CheesesListItem";
+
+const CheesesList = ({ cheeses }) => {
   return (
     <>
-      <button class="btn btn-primary">Create</button>
-      <h1 className="text-3xl">TEST</h1>
+      <div className="w-full flex justif-end">
+        <Link to="/cheeses/create" className="btn btn-primary btn-success">
+          Ajouter un fromage
+        </Link>
+      </div>
+      <div className="mt-4 flex flex-wrap m-auto max-w-5xl gap-4">
+        {cheeses.map((cheese) => (
+          <CheesesListItem key={cheese.id} cheese={cheese} />
+        ))}
+      </div>
     </>
   );
 };
