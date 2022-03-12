@@ -1,6 +1,10 @@
+import { useQuery } from "react-query";
+
 import { useEffect, useState } from "react";
+
 import getMilkTypes from "../api/getMilkTypes";
 const useMilkTypes = () => {
+  // Normal mode
   const [milkTypes, setMilkTypes] = useState([]);
   useEffect(() => {
     const getData = async () => {
@@ -10,7 +14,10 @@ const useMilkTypes = () => {
     getData();
   }, []);
 
-  return { milkTypes };
+  //  React Query mode
+  // const { data: milkTypes } = useQuery("milkTypes", getMilkTypes);
+
+  return { milkTypes: milkTypes || [] };
 };
 
 export default useMilkTypes;

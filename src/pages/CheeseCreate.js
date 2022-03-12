@@ -5,7 +5,9 @@ import useMilkTypes from "../services/hooks/useMilkTypes";
 
 const CheeseCreatePage = () => {
   const navigate = useNavigate();
+
   const { milkTypes } = useMilkTypes();
+
   const handleSubmit = async (body) => {
     const cheese = await createCheese(body);
     navigate(`/cheeses/${cheese.id}`);

@@ -1,0 +1,3 @@
+- Montrer la définition du provider dans App.js
+- Décommenter pages/CheesesList.js
+- Décommenter useMilkTypes.js

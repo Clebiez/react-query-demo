@@ -12,9 +12,9 @@ const MainLayout = ({ children }) => {
             <li>
               <a href="/">Fromages</a>
             </li>
-            <li>
+            {/* <li>
               <a href="/categories">Catégories</a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
