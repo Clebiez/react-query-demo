@@ -3,7 +3,6 @@ import { useQuery } from "react-query";
 import { useState, useEffect, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 import CheesesList from "../components/CheesesList";
-import Loader from "../components/ui/Loader";
 
 import getCheeses from "../services/api/getCheeses";
 import useMilkTypes from "../services/hooks/useMilkTypes";
@@ -24,6 +23,7 @@ const CheesesListPage = () => {
     pagination: [],
   });
   const [isLoading, setIsLoading] = useState(true);
+
   const refetch = useCallback(async ({ milkType, q, page }) => {
     setIsLoading(true);
     const res = await getCheeses({ page, milkType, q });

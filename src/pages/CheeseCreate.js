@@ -8,11 +8,11 @@ const CheeseCreatePage = () => {
 
   const { milkTypes } = useMilkTypes();
 
-  const queryClient = useQueryClient();
+  // const queryClient = useQueryClient();
 
   const handleSubmit = async (body) => {
     const cheese = await createCheese(body);
-    await queryClient.invalidateQueries("cheeses");
+    // await queryClient.invalidateQueries("cheeses");
     navigate(`/cheeses/${cheese.id}`);
   };
 

@@ -4,6 +4,7 @@ import useMilkType from "../../services/hooks/useMilkType";
 import getMilkType from "../../services/api/getMilkType";
 import VoteButton from "../VoteButton";
 import getVotedCheese from "../../services/api/getVotedCheese";
+import useCheeseIsVoted from "../../services/hooks/useCheeseIsVoted";
 
 const CheesesListItem = ({ cheese, onClickOnVoteCheese }) => {
   const [milkType, setMilkType] = useState(null);
@@ -22,6 +23,7 @@ const CheesesListItem = ({ cheese, onClickOnVoteCheese }) => {
 
   // React Query Mode
   // const { milkType } = useMilkType(cheese.milkType);
+  // const { cheeseIsVoted } = useCheeseIsVoted(cheese.id);
 
   return (
     <div className="card w-72 card-bordered bg-base-100 shadow-xl">

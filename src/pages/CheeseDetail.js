@@ -11,6 +11,7 @@ import getVotedCheese from "../services/api/getVotedCheese";
 import deleteCheese from "../services/api/deleteCheese";
 import useMilkType from "../services/hooks/useMilkType";
 import { useQuery, useMutation, useQueryClient } from "react-query";
+import useCheeseIsVoted from "../services/hooks/useCheeseIsVoted";
 
 const CheeseDetailPage = () => {
   const navigate = useNavigate();
@@ -44,11 +45,7 @@ const CheeseDetailPage = () => {
   // const { data: cheese } = useQuery(["cheese", id], () => getCheese(id), {
   //   enabled: !!id,
   // });
-  // const { data: isVoted } = useQuery(
-  //   ["votedCheese", id],
-  //   () => getVotedCheese(id),
-  //   { enabled: !!id }
-  // );
+  // const { cheeseIsVoted: isVoted } = useCheeseIsVoted(cheese.id);
 
   // const { milkType } = useMilkType(cheese?.milkType);
 

@@ -7,14 +7,14 @@
       "description": "Camembert est une appellation générique qui désigne généralement un fromage à pâte molle et à croûte fleurie. Commercialement, cette appellation d'origine normande ne fait l'objet d'aucune protection et se voit utilisée pour des fromages n'ayant parfois que peu de rapport avec le camembert originel. Dans certaines régions de France, le camembert est appelé « claquos », « calendos » ou « camembos » ou cadendos ou cadenli ou cadenil et dans le Jura, il est appelé Comté coulant.",
       "area": "Normandie",
       "milkType": 1,
-      "vote": 31
+      "vote": 32
     },
     {
       "name": "Comté",
       "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Comte_AOP.jpg/375px-Comte_AOP.jpg",
       "description": "Comté est l'appellation d'origine d'un fromage français transformé principalement en Franche-Comté et bénéficiant d'une AOC depuis 1958 et d'une AOP depuis 1996. Son aire de production s'étend dans les départements du Jura, du Doubs et l'est de l'Ain et de la Saône et Loire.",
       "area": "Franche-Comté",
-      "vote": 30,
+      "vote": 31,
       "id": 2,
       "milkType": 1
     },
@@ -23,7 +23,7 @@
       "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mozzarella_cheese_%281%29.jpg/390px-Mozzarella_cheese_%281%29.jpg",
       "description": "La mozzarella ou mozzarelle est un fromage à pâte filée traditionnel de la cuisine italienne, à base de lait de vache ou de bufflonne. La mozzarella di Bufala Campana, produite en Campanie avec du lait de bufflonne, est l'objet d'une appellation d'origine protégée italienne (AOP) depuis 1996.",
       "area": "Campanie",
-      "vote": 6,
+      "vote": 7,
       "id": 3,
       "milkType": 4
     },
@@ -33,7 +33,7 @@
       "description": "Saint-nectaire est une appellation d'origine désignant un fromage français de lait de vache fabriqué dans la micro-région des Monts Dore, pays à cheval sur les départements du Cantal et du Puy-de-Dôme en France. Le savoir-faire des artisans du Saint-Nectaire a été reconnu par le ministère de la Culture est inscrit à l'inventaire du patrimoine culturel immatériel en France en 2019.",
       "area": "Cantal",
       "milkType": 1,
-      "vote": 36,
+      "vote": 37,
       "id": 4
     },
     {
@@ -42,7 +42,7 @@
       "description": "Le rocamadour est un fromage français de chèvre au lait cru entier. Il appartient à la famille des cabécous. Il est ou a été aussi appelé « cabécou de Rocamadour ».\n\nCe fromage au lait cru est produit dans le Quercy et l'appellation « rocamadour » seule est protégée grâce à une AOC depuis 1995. Cette appellation a pour origine la commune de Rocamadour dans le département du Lot. ",
       "area": "Lot",
       "milkType": 2,
-      "vote": 22,
+      "vote": 26,
       "id": 5
     },
     {
@@ -51,7 +51,7 @@
       "description": "Charolais est une appellation d'origine française désignant un fromage au lait cru de chèvre, à pâte molle à croûte naturelle. Originaire des collines du Charolais et du Brionnais, en Bourgogne, ce fromage est aujourd'hui produit dans certaines communes de Saône-et-Loire majoritairement, mais aussi dans l'Allier, la Loire et le Rhône. ",
       "area": "Saône-Et-Loire",
       "milkType": 2,
-      "vote": 3,
+      "vote": 5,
       "id": 6
     },
     {
@@ -60,7 +60,7 @@
       "description": "Le chevrotin est un fromage fermier au lait cru de chèvre des départements de Savoie et Haute-Savoie. Cette appellation d'origine française bénéficie de préservation grâce à une appellation d'origine contrôlée depuis mai 2002 et appellation d'origine protégée depuis 2005. ",
       "area": "Savoie",
       "milkType": 2,
-      "vote": 3,
+      "vote": 4,
       "id": 7
     },
     {
@@ -69,7 +69,7 @@
       "description": "Le pélardon est un très petit fromage au lait cru de chèvre de la région du Languedoc protégé par une AOC.\n\nDepuis août 2000, pour un fromage, l'usage commercial de l'appellation « pélardon » est soumis au respect d'un cahier des charges attaché à une AOC. ",
       "area": "Languedoc",
       "milkType": 2,
-      "vote": 7,
+      "vote": 8,
       "id": 8
     },
     {
@@ -78,7 +78,7 @@
       "description": "Le crottin de Chavignol est un fromage de chèvre français originaire du village berrichon de Chavignol situé dans le département du Cher, la région Centre-Val de Loire et la région naturelle du Sancerrois. ",
       "area": "Cher",
       "milkType": 2,
-      "vote": 4,
+      "vote": 6,
       "id": 9
     },
     {
@@ -87,7 +87,7 @@
       "description": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Wikicheese_-_Fleur_du_Maquis_-_20150417_-_003.jpg/220px-Wikicheese_-_Fleur_du_Maquis_-_20150417_-_003.jpg",
       "area": "Corse",
       "milkType": 3,
-      "vote": 4,
+      "vote": 6,
       "id": 10
     },
     {
@@ -96,7 +96,7 @@
       "description": "Etorki (origine en basque) est une marque commerciale de fromage industriel français fabriqué au pays basque français dans l'ancienne province de la Soule (Mauléon-Licharre dans les Pyrénées-Atlantiques) par la fromagerie des Chaumes filiale du groupe Savencia Fromage & Dairy.",
       "area": "Mauléon-Licharre",
       "milkType": 3,
-      "vote": 5,
+      "vote": 6,
       "id": 11
     },
     {
@@ -114,7 +114,7 @@
       "description": "Feta ou Féta (en grec moderne : φέτα) désigne un fromage caillé en saumure originaire de Grèce. Le nom de ce fromage est un emprunt à l’italien « fetta » (tranche) qui daterait du XVIIe siècle. L’appellation « feta » associée au fromage est attestée au XIXe siècle. Elle caractérise un fromage produit selon des techniques précises. Ce type de fromage est traditionnellement fabriqué à partir de lait de brebis, parfois en association avec du lait de chèvre. ",
       "area": "Grèce",
       "milkType": 3,
-      "vote": 3,
+      "vote": 4,
       "id": 13
     },
     {
@@ -123,7 +123,7 @@
       "description": "Ossau-Iraty est l'appellation d'origine d'un fromage français de lait de brebis à pâte pressée non cuite fabriqué dans le Pays basque français et le Béarn.\n\nCette appellation a pour origine le pic du Midi d'Ossau et la forêt d'Iraty et est commercialement préservée via une AOC depuis 1980 et une AOP depuis 1996. ",
       "area": "Pyrénées-Atlantique",
       "milkType": 3,
-      "vote": 5,
+      "vote": 6,
       "id": 14
     },
     {
@@ -132,7 +132,7 @@
       "description": "Le pecorino est un fromage italien au lait de brebis (pecora en italien). ",
       "area": "Italie",
       "milkType": 3,
-      "vote": 3,
+      "vote": 4,
       "id": 15
     },
     {
@@ -150,7 +150,7 @@
       "description": "Le Zamorano ou fromage Zamorano, en espagnol : queso Zamorano, est un fromage au lait de brebis AOP fabriqué dans la province de Zamora, en Espagne. Ce fromage à pâte dure est consommé en général après 6 mois d'affinage. Au cours de cette phase d'affinage, les fromages sont régulièrement retournés et frottés avec de l'huile d'olive ce qui contribue à donner une couleur foncée à la croûte. On attribue le goût de ce fromage à la race des brebis (churra (en) et brebis castillane), à la météo de la région et au vieillissement en cave. ",
       "area": "Espagne",
       "milkType": 3,
-      "vote": 7,
+      "vote": 8,
       "id": 17
     }
   ],

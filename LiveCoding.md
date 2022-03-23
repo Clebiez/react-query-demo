@@ -11,7 +11,6 @@
 
 - Dans CheeseDetail décommenter la partie react query et expliquer les mutations
 - Montrer qu'on ne change pas Delete cheese car une mutation de base, ça sert à rien d'utile
-- Montrer
 - Montrer l'invalidation du cache et montrer que l'on peut voter pour un fromage et que ça refresh bien la page
 - Passer à cheese create et expliquer que pareil ici on a pas grand chose à faire mis à part peut être invalider toutes les query lié aux fromages si on veut.
 - Rajouter un stale time à la liste des fromages
