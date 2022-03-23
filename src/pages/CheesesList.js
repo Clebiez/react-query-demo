@@ -23,9 +23,12 @@ const CheesesListPage = () => {
     data: [],
     pagination: [],
   });
+  const [isLoading, setIsLoading] = useState(true);
   const refetch = useCallback(async ({ milkType, q, page }) => {
+    setIsLoading(true);
     const res = await getCheeses({ page, milkType, q });
     setData(res);
+    setIsLoading(false);
   }, []);
 
   useEffect(() => {
@@ -33,8 +36,9 @@ const CheesesListPage = () => {
   }, [milkType, q, page, refetch]);
 
   // React Query Mode
-  // const { data, refetch } = useQuery(["cheeses", page, milkType, q], () =>
-  //   getCheeses({ page, milkType, q })
+  // const { data, isLoading, refetch } = useQuery(
+  //   ["cheeses", page, milkType, q],
+  //   () => getCheeses({ page, milkType, q }),
   // );
 
   const onClickOnVoteCheese = async (cheese) => {
@@ -49,6 +53,7 @@ const CheesesListPage = () => {
       pagination={data?.pagination}
       milkTypes={milkTypes}
       onClickOnVoteCheese={onClickOnVoteCheese}
+      isLoading={isLoading}
     />
   );
 };

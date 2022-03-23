@@ -7,7 +7,7 @@
       "description": "Camembert est une appellation générique qui désigne généralement un fromage à pâte molle et à croûte fleurie. Commercialement, cette appellation d'origine normande ne fait l'objet d'aucune protection et se voit utilisée pour des fromages n'ayant parfois que peu de rapport avec le camembert originel. Dans certaines régions de France, le camembert est appelé « claquos », « calendos » ou « camembos » ou cadendos ou cadenli ou cadenil et dans le Jura, il est appelé Comté coulant.",
       "area": "Normandie",
       "milkType": 1,
-      "vote": 30
+      "vote": 31
     },
     {
       "name": "Comté",
@@ -33,7 +33,7 @@
       "description": "Saint-nectaire est une appellation d'origine désignant un fromage français de lait de vache fabriqué dans la micro-région des Monts Dore, pays à cheval sur les départements du Cantal et du Puy-de-Dôme en France. Le savoir-faire des artisans du Saint-Nectaire a été reconnu par le ministère de la Culture est inscrit à l'inventaire du patrimoine culturel immatériel en France en 2019.",
       "area": "Cantal",
       "milkType": 1,
-      "vote": 34,
+      "vote": 36,
       "id": 4
     },
     {
@@ -69,7 +69,7 @@
       "description": "Le pélardon est un très petit fromage au lait cru de chèvre de la région du Languedoc protégé par une AOC.\n\nDepuis août 2000, pour un fromage, l'usage commercial de l'appellation « pélardon » est soumis au respect d'un cahier des charges attaché à une AOC. ",
       "area": "Languedoc",
       "milkType": 2,
-      "vote": 6,
+      "vote": 7,
       "id": 8
     },
     {
@@ -105,7 +105,7 @@
       "description": "La faisselle est une appellation générique française désignant du fromage frais au lait cru qui prend son nom du moule à fromage dans lequel il s'égoutte : la faisselle.",
       "area": "Berry",
       "milkType": 3,
-      "vote": 10,
+      "vote": 11,
       "id": 12
     },
     {
@@ -114,7 +114,7 @@
       "description": "Feta ou Féta (en grec moderne : φέτα) désigne un fromage caillé en saumure originaire de Grèce. Le nom de ce fromage est un emprunt à l’italien « fetta » (tranche) qui daterait du XVIIe siècle. L’appellation « feta » associée au fromage est attestée au XIXe siècle. Elle caractérise un fromage produit selon des techniques précises. Ce type de fromage est traditionnellement fabriqué à partir de lait de brebis, parfois en association avec du lait de chèvre. ",
       "area": "Grèce",
       "milkType": 3,
-      "vote": 2,
+      "vote": 3,
       "id": 13
     },
     {
@@ -123,7 +123,7 @@
       "description": "Ossau-Iraty est l'appellation d'origine d'un fromage français de lait de brebis à pâte pressée non cuite fabriqué dans le Pays basque français et le Béarn.\n\nCette appellation a pour origine le pic du Midi d'Ossau et la forêt d'Iraty et est commercialement préservée via une AOC depuis 1980 et une AOP depuis 1996. ",
       "area": "Pyrénées-Atlantique",
       "milkType": 3,
-      "vote": 4,
+      "vote": 5,
       "id": 14
     },
     {
@@ -132,7 +132,7 @@
       "description": "Le pecorino est un fromage italien au lait de brebis (pecora en italien). ",
       "area": "Italie",
       "milkType": 3,
-      "vote": 2,
+      "vote": 3,
       "id": 15
     },
     {
@@ -141,7 +141,7 @@
       "description": "Roquefort [ʁɔk(ə)fɔːʁ] ou ròcafòrt en occitan rouergat est une appellation d'origine désignant un fromage français à pâte persillée élaborée exclusivement avec des laits crus de brebis.\n\nSa meilleure période de consommation s'étend de janvier à août.\n\nCe fromage est mentionné expressément pour la première fois au XIe siècle, ce qui en fait un symbole historique de la région des causses et vallées de l'Aveyron. Cette région rurale, établie sur un terroir parfois très difficile à exploiter, en a fait sa richesse financière et culturelle. ",
       "area": "Aveyron",
       "milkType": 3,
-      "vote": 21,
+      "vote": 23,
       "id": 16
     },
     {
@@ -150,7 +150,7 @@
       "description": "Le Zamorano ou fromage Zamorano, en espagnol : queso Zamorano, est un fromage au lait de brebis AOP fabriqué dans la province de Zamora, en Espagne. Ce fromage à pâte dure est consommé en général après 6 mois d'affinage. Au cours de cette phase d'affinage, les fromages sont régulièrement retournés et frottés avec de l'huile d'olive ce qui contribue à donner une couleur foncée à la croûte. On attribue le goût de ce fromage à la race des brebis (churra (en) et brebis castillane), à la météo de la région et au vieillissement en cave. ",
       "area": "Espagne",
       "milkType": 3,
-      "vote": 6,
+      "vote": 7,
       "id": 17
     }
   ],

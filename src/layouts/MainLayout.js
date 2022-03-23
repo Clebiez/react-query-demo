@@ -1,16 +1,17 @@
+import { Link } from "react-router-dom";
 const MainLayout = ({ children }) => {
   return (
     <>
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a href="/" className="btn btn-ghost normal-case text-xl">
+          <Link to="/" className="btn btn-ghost normal-case text-xl">
             FromageContest
-          </a>
+          </Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal p-0">
             <li>
-              <a href="/">Fromages</a>
+              <Link to="/">Fromages</Link>
             </li>
             {/* <li>
               <a href="/categories">Catégories</a>

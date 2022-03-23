@@ -4,6 +4,7 @@ import {
   useSearchParams,
   useNavigate,
 } from "react-router-dom";
+import Loader from "../ui/Loader";
 import debounce from "../../services/debounce";
 import CheesesListItem from "./CheesesListItem";
 import Pagination from "./Pagination";
@@ -13,6 +14,7 @@ const CheesesList = ({
   pagination,
   milkTypes,
   onClickOnVoteCheese,
+  isLoading,
 }) => {
   const { pathname } = useLocation();
   const [searchParams] = useSearchParams();
@@ -61,7 +63,9 @@ const CheesesList = ({
           Ajouter un fromage
         </Link>
       </div>
-      {cheeses?.length ? (
+      {isLoading ? (
+        <Loader />
+      ) : cheeses?.length ? (
         <>
           <div className="mt-4 flex flex-wrap mx-auto max-w-5xl gap-4 justify-center">
             {cheeses?.map((cheese) => (

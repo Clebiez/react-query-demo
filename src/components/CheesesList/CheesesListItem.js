@@ -1,13 +1,13 @@
-import { useQuery } from "react-query";
-
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import useMilkType from "../../services/hooks/useMilkType";
 import getMilkType from "../../services/api/getMilkType";
 import VoteButton from "../VoteButton";
 import getVotedCheese from "../../services/api/getVotedCheese";
 
 const CheesesListItem = ({ cheese, onClickOnVoteCheese }) => {
   const [milkType, setMilkType] = useState(null);
+
   const [cheeseIsVoted, setCheeseIsVoted] = useState(false);
 
   useEffect(() => {
@@ -19,6 +19,9 @@ const CheesesListItem = ({ cheese, onClickOnVoteCheese }) => {
     };
     getData(cheese);
   }, [cheese]);
+
+  // React Query Mode
+  // const { milkType } = useMilkType(cheese.milkType);
 
   return (
     <div className="card w-72 card-bordered bg-base-100 shadow-xl">
