@@ -17,7 +17,7 @@ const CheeseDetailPage = () => {
   const navigate = useNavigate();
   const { id } = useParams();
 
-  // Normal Mode
+  // Normal mode
 
   const [cheese, setCheese] = useState({});
   const [isVoted, setIsVoted] = useState(false);
@@ -42,12 +42,13 @@ const CheeseDetailPage = () => {
   };
 
   // React Query Mode
-  // const { data: cheese } = useQuery(["cheese", id], () => getCheese(id), {
+  // const { data: cheese } = useQuery(["cheeses", id], () => getCheese(id), {
   //   enabled: !!id,
   // });
-  // const { cheeseIsVoted: isVoted } = useCheeseIsVoted(cheese.id);
 
   // const { milkType } = useMilkType(cheese?.milkType);
+
+  // const { cheeseIsVoted: isVoted } = useCheeseIsVoted(id);
 
   // const queryClient = useQueryClient();
 
@@ -55,36 +56,22 @@ const CheeseDetailPage = () => {
   //   async (cheese) => {
   //     await updateCheeseVote(cheese.id, cheese.vote);
   //     await setVotedCheese(cheese);
+  //   },
+  //   {
+  //     onSettled: () => {
+  //       // Cheese resource from the API
+  //       queryClient.invalidateQueries(["cheeses", id]);
+  //       // If I have voted from the local storage
+  //       queryClient.invalidateQueries(["cheeseIsVoted", id]);
+  //     },
   //   }
-  //   // {
-  //   //   onMutate: () => {
-  //   //     const previousCheese = queryClient.getQueryData(["cheese", id]);
-  //   //     queryClient.setQueryData(["cheese", id], {
-  //   //       ...previousCheese,
-  //   //       vote: previousCheese.vote + 1,
-  //   //     });
-
-  //   //     queryClient.setQueryData(["votedCheese", id], true);
-  //   //     return { previousCheese, isVoted: false }; // Context
-  //   //   },
-  //   //   onError: (err, cheese, context) => {
-  //   //     queryClient.setQueryData(["cheese", id], context.previousCheese);
-
-  //   //     queryClient.setQueryData(["votedCheese", id], false);
-  //   //   },
-  //   //   onSettled: () => {
-  //   //     // Cheese resource from the API
-  //   //     queryClient.invalidateQueries(["cheese", id]);
-  //   //     // If I have voted from the local storage
-  //   //     queryClient.invalidateQueries(["votedCheese", id]);
-  //   //   },
-  //   // }
   // );
 
   // const onClickOnVoteCheese = () => voteCheeseMutation.mutate(cheese);
 
   const onClickDeleteCheese = async () => {
     await deleteCheese(id);
+
     navigate("/");
   };
 

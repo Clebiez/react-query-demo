@@ -1,19 +1,19 @@
 - Montrer la définition du provider dans App.js
 - Décommenter pages/CheesesList.js
-- Décommenter useMilkTypes.js
-- Montrer le react query devtool
-- Montrer le refetch et expliquer le stale while revalidate
 - Montrer avec un network throttle que quand on change de page il ressert les anciennes données pendant qu'il va rechercher les nouvelles
 - Rajouter keepPreviousData dans la pagination pour éviter de repasser par le loader
-
+- Décommenter useMilkTypes.js
+- Expliquer le staleTime
+- Montrer le react query devtool
+- Montrer le refetch et expliquer le stale while revalidate
 - Dans CheesesListItem décommenter le useMilkType et montrer le staleTime
-- Dans useMilkType décommenter le staleTime
-
-- Dans CheeseDetail décommenter la partie react query et expliquer les mutations
-- Montrer qu'on ne change pas Delete cheese car une mutation de base, ça sert à rien d'utile
+- Expliquer le cheeseIsVoted hook et d'ou il vient
+- Dans CheeseDetail décommenter la partie react query et montrer la dépendance de requête
+- Expliquer les mutations
 - Montrer l'invalidation du cache et montrer que l'on peut voter pour un fromage et que ça refresh bien la page
+- Montrer qu'on ne change pas Delete cheese car une mutation de base, ça sert à rien d'utile
 - Passer à cheese create et expliquer que pareil ici on a pas grand chose à faire mis à part peut être invalider toutes les query lié aux fromages si on veut.
-- Rajouter un stale time à la liste des fromages
+- Rajouter un stale time à la liste des fromages dans pages/CheesesList
 - Montrer que rajouter un fromage ne permet pas de le retrouver dans la liste
 - Rajouter `await queryClient.invalidateQueries("cheeses");` dans CheeseDetail
 - Montrer que rajouter un fromage permet ensuite de le retrouver car on a dit à react query que les requêtes n'étaient plus fraiches

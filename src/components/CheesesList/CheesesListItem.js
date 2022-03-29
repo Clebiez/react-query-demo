@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import useMilkType from "../../services/hooks/useMilkType";
-import getMilkType from "../../services/api/getMilkType";
-import VoteButton from "../VoteButton";
-import getVotedCheese from "../../services/api/getVotedCheese";
 import useCheeseIsVoted from "../../services/hooks/useCheeseIsVoted";
+import getMilkType from "../../services/api/getMilkType";
+import getVotedCheese from "../../services/api/getVotedCheese";
+import VoteButton from "../VoteButton";
 
 const CheesesListItem = ({ cheese, onClickOnVoteCheese }) => {
+  // Normal mode
   const [milkType, setMilkType] = useState(null);
 
   const [cheeseIsVoted, setCheeseIsVoted] = useState(false);
@@ -23,6 +24,7 @@ const CheesesListItem = ({ cheese, onClickOnVoteCheese }) => {
 
   // React Query Mode
   // const { milkType } = useMilkType(cheese.milkType);
+
   // const { cheeseIsVoted } = useCheeseIsVoted(cheese.id);
 
   return (

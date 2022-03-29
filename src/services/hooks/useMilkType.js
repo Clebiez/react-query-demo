@@ -7,7 +7,7 @@ const useMilkType = (id) => {
     staleTime: 60 * 1000 * 60,
   });
 
-  return { milkType: data || [] };
+  return { milkType: data };
 };
 
 export default useMilkType;
