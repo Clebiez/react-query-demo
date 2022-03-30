@@ -52,7 +52,7 @@ const CheeseDetailPage = () => {
 
   // const queryClient = useQueryClient();
 
-  // const voteCheeseMutation = useMutation(
+  // const { mutate, status } = useMutation(
   //   async (cheese) => {
   //     await updateCheeseVote(cheese.id, cheese.vote);
   //     await setVotedCheese(cheese);
@@ -67,7 +67,7 @@ const CheeseDetailPage = () => {
   //   }
   // );
 
-  // const onClickOnVoteCheese = () => voteCheeseMutation.mutate(cheese);
+  // const onClickOnVoteCheese = () => mutate(cheese);
 
   const onClickDeleteCheese = async () => {
     await deleteCheese(id);
@@ -79,13 +79,35 @@ const CheeseDetailPage = () => {
     return <Loader />;
   }
   return (
-    <CheeseDetail
-      cheese={cheese}
-      milkType={milkType}
-      onClickDeleteCheese={onClickDeleteCheese}
-      onClickOnVoteCheese={onClickOnVoteCheese}
-      isVoted={isVoted}
-    />
+    <>
+      {/* {status === "success" && (
+        <div class="alert alert-success shadow-lg max-w-xl m-auto mb-8">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="stroke-current flex-shrink-0 h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span>Your purchase has been confirmed!</span>
+          </div>
+        </div>
+      )} */}
+      <CheeseDetail
+        cheese={cheese}
+        milkType={milkType}
+        onClickDeleteCheese={onClickDeleteCheese}
+        onClickOnVoteCheese={onClickOnVoteCheese}
+        isVoted={isVoted}
+      />
+    </>
   );
 };
 
