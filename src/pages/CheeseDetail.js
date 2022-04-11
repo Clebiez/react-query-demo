@@ -52,10 +52,10 @@ const CheeseDetailPage = () => {
 
   // const queryClient = useQueryClient();
 
-  // const { mutate, status } = useMutation(
+  // const { mutateAsync, status } = useMutation(
   //   async (cheese) => {
-  //     await updateCheeseVote(cheese.id, cheese.vote);
   //     await setVotedCheese(cheese);
+  //     return updateCheeseVote(cheese.id, cheese.vote);
   //   },
   //   {
   //     onSettled: () => {
@@ -66,8 +66,17 @@ const CheeseDetailPage = () => {
   //     },
   //   }
   // );
+  // const onClickOnVoteCheese = () => mutateAsync(cheese);
 
-  // const onClickOnVoteCheese = () => mutate(cheese);
+  // onSuccess: (data) => {
+  //   console.log("data", data);
+  //   queryClient.setQueryData(["cheeses", id], data);
+  // },
+
+  // onMutate: (data) => {
+  //   queryClient.cancelQueries(["cheeses", id])
+  //   queryClient.setQueryData(["cheeses", id], data);
+  // }
 
   const onClickDeleteCheese = async () => {
     await deleteCheese(id);
