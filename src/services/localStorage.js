@@ -3,7 +3,7 @@ function localStorageService() {
     get(itemName) {
       const item = localStorage.getItem(itemName);
       const numPatt = new RegExp(/^\d+$/);
-      const jsonPatt = new RegExp(/[\[\{].*[\}\]]/);
+      const jsonPatt = new RegExp(/[[{].*[}\]]/);
 
       if (item) {
         if (jsonPatt.test(item)) {

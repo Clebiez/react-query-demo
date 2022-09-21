@@ -1,13 +1,11 @@
+import Button from "../ui/Button";
+
 const VoteButton = ({ vote, onClick, className, ...props }) => (
   <div className="indicator">
     <span className="indicator-item badge badge-secondary">{vote}</span>
-    <button
-      className={`btn btn-primary ${className}`}
-      onClick={onClick}
-      {...props}
-    >
+    <Button variant="primary" onClick={onClick} {...props}>
       Voter
-    </button>
+    </Button>
   </div>
 );
 

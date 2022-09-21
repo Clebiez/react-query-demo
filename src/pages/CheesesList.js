@@ -1,50 +1,44 @@
 import { useQuery } from "react-query";
 
-import { useState, useEffect, useCallback } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useLocation, useSearchParams, useNavigate } from "react-router-dom";
 import CheesesList from "../components/CheesesList";
 
 import getCheeses from "../services/api/getCheeses";
 import useMilkTypes from "../services/hooks/useMilkTypes";
-import updateCheeseVote from "../services/api/updateCheeseVote";
-import setVotedCheese from "../services/api/setVotedCheese";
+import useVoteForCheeseMutation from "../services/hooks/useVoteForCheeseMutation";
 
 const CheesesListPage = () => {
-  const { milkTypes } = useMilkTypes();
-
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const page = searchParams.get("page") || 1;
   const milkType = searchParams.get("milkType");
   const q = searchParams.get("q");
 
-  // Normal Mode
-  const [data, setData] = useState({
-    data: [],
-    pagination: [],
-  });
-  const [isLoading, setIsLoading] = useState(true);
+  const { milkTypes } = useMilkTypes();
 
-  const refetch = useCallback(async ({ milkType, q, page }) => {
-    setIsLoading(true);
-    const res = await getCheeses({ page, milkType, q });
-    setData(res);
-    setIsLoading(false);
-  }, []);
+  const { data, isLoading } = useQuery(["cheeses", page, milkType, q], () =>
+    getCheeses({ page, milkType, q })
+  );
 
-  useEffect(() => {
-    refetch({ milkType, q, page });
-  }, [milkType, q, page, refetch]);
+  const { mutateAsync: onClickOnVoteCheese } = useVoteForCheeseMutation();
 
-  // React Query Mode
-  // const { data, isLoading, refetch } = useQuery(
-  //   ["cheeses", page, milkType, q],
-  //   () => getCheeses({ page, milkType, q }),
-  // );
+  const onSearch = (e) => {
+    searchParams.set("q", e.target.value);
+    searchParams.set("page", 1);
+    navigate({
+      pathname,
+      search: searchParams.toString(),
+    });
+  };
 
-  const onClickOnVoteCheese = async (cheese) => {
-    await updateCheeseVote(cheese.id, cheese.vote);
-    await setVotedCheese(cheese);
-    refetch({ milkType, q, page });
+  const onSelectMilkType = (e) => {
+    searchParams.set("milkType", e.target.value);
+    searchParams.set("page", 1);
+    navigate({
+      pathname,
+      search: searchParams.toString(),
+    });
   };
 
   return (
@@ -53,7 +47,11 @@ const CheesesListPage = () => {
       pagination={data?.pagination}
       milkTypes={milkTypes}
       onClickOnVoteCheese={onClickOnVoteCheese}
+      onSelectMilkType={onSelectMilkType}
+      onSearch={onSearch}
       isLoading={isLoading}
+      search={q}
+      selectedMilkType={milkType}
     />
   );
 };

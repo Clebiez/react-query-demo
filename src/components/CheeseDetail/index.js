@@ -1,3 +1,4 @@
+import Button from "../ui/Button";
 import VoteButton from "../VoteButton";
 
 const CheeseDetail = ({
@@ -24,13 +25,14 @@ const CheeseDetail = ({
         </p>
         <p className="mt-4">{cheese.description}</p>
         <div className="flex justify-center gap-4 mt-4">
-          <button onClick={onClickDeleteCheese} className="btn btn-error">
+          <Button onClick={onClickDeleteCheese} variant="error">
             Supprimer
-          </button>
+          </Button>
           <VoteButton
             vote={cheese.vote}
             onClick={onClickOnVoteCheese}
             disabled={isVoted}
+            size="small"
           />
         </div>
       </div>

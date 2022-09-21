@@ -1,5 +1,8 @@
 import { useForm } from "react-hook-form";
 import MilkTypesSelector from "../MilkTypesSelector";
+import Button from "../ui/Button";
+import Input from "../ui/Input";
+import Textarea from "../ui/Textarea";
 
 const CheeseForm = ({ onSubmit, milkTypes }) => {
   const { register, handleSubmit } = useForm();
@@ -8,42 +11,18 @@ const CheeseForm = ({ onSubmit, milkTypes }) => {
     <div className="max-w-lg m-auto">
       <h1 className="text-3xl text-center font-bold">Ajouter un fromage</h1>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
-        <div className="form-control w-full">
-          <label className="label">
-            <span className="label-text">Nom</span>
-          </label>
-          <input
-            className="input input-bordered w-full"
-            {...register("name", { required: true })}
-          />
-        </div>
-        <div className="form-control w-full">
-          <label className="label">
-            <span className="label-text">URL de l'image</span>
-          </label>
-          <input
-            className="input input-bordered w-full"
-            {...register("picture", { required: true })}
-          />
-        </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">Description</span>
-          </label>
-          <textarea
-            className="textarea h-24 textarea-bordered"
-            {...register("description", { required: true })}
-          ></textarea>
-        </div>
-        <div className="form-control w-full">
-          <label className="label">
-            <span className="label-text">Région</span>
-          </label>
-          <input
-            className="input input-bordered w-full"
-            {...register("area", { required: true })}
-          />
-        </div>
+        <Input label="Nom" {...register("name", { required: true })} />
+        <Input
+          label="URL de l'image"
+          {...register("picture", { required: true })}
+        />
+
+        <Textarea
+          label="Description"
+          {...register("description", { required: true })}
+        />
+
+        <Input label="Région" {...register("area", { required: true })} />
 
         <MilkTypesSelector
           {...register("milkType", {
@@ -51,10 +30,11 @@ const CheeseForm = ({ onSubmit, milkTypes }) => {
           })}
           milkTypes={milkTypes}
         />
-
-        <button type="submit" className="mt-2 btn btn-success">
-          Sauvegarder
-        </button>
+        <div className="mt-4 mx-auto">
+          <Button type="submit" variant="success">
+            Sauvegarder
+          </Button>
+        </div>
       </form>
     </div>
   );

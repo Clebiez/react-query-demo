@@ -5,7 +5,6 @@ import getVotedCheese from "../api/getVotedCheese";
 const useCheeseIsVoted = (id) => {
   const { data } = useQuery(["cheeseIsVoted", id], () => getVotedCheese(id), {
     enabled: !!id,
-    staleTime: 60 * 1000 * 60,
   });
 
   return { cheeseIsVoted: data };

@@ -5,7 +5,13 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import MainLayout from "./layouts/MainLayout";
 
 function App() {
-  const queryClient = new QueryClient();
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: false,
+      },
+    },
+  });
   return (
     <QueryClientProvider client={queryClient}>
       <MainLayout>
