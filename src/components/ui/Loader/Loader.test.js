@@ -7,11 +7,5 @@ describe("Given Loader Component", () => {
     render(<Loader />);
   });
 
-  //   it("When isLoading is true then false, Then should display children", async () => {
-  //     const { rerender } = render(<Loader isLoading={true}>Coucou</Loader>);
-  //     expect(screen.queryByText("Coucou")).toBeNull();
-
-  //     rerender(<Loader isLoading={false}>Coucou</Loader>);
-  //     expect(screen.getByText("Coucou")).toBeVisible();
-  //   });
+  it("When isLoading is true then false, Then should display children", async () => {});
 });

@@ -23,8 +23,8 @@ const CheesesListPage = () => {
 
   const { mutateAsync: onClickOnVoteCheese } = useVoteForCheeseMutation();
 
-  const onSearch = (e) => {
-    searchParams.set("q", e.target.value);
+  const onSearch = (value) => {
+    searchParams.set("q", value);
     searchParams.set("page", 1);
     navigate({
       pathname,
@@ -32,8 +32,8 @@ const CheesesListPage = () => {
     });
   };
 
-  const onSelectMilkType = (e) => {
-    searchParams.set("milkType", e.target.value);
+  const onSelectMilkType = (value) => {
+    searchParams.set("milkType", value);
     searchParams.set("page", 1);
     navigate({
       pathname,

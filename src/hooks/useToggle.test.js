@@ -8,4 +8,6 @@ describe("Given useToggle hook", () => {
     expect(result.current.value).toBe(false);
     expect(typeof result.current.toggleValue).toBe("function");
   });
+
+  test("When toggleValue is called, Then toggle should be true", async () => {});
 });

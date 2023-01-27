@@ -10,7 +10,7 @@ const MilkTypesSelector = forwardRef(
           className="select select-bordered"
           ref={ref}
           {...props}
-          value={selectedMilkType}
+          value={selectedMilkType ?? ""}
         >
           <option key={0} value="">
             Choisir un lait

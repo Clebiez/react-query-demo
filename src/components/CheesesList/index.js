@@ -24,17 +24,18 @@ const CheesesList = ({
             <span className="label-text">Recherche</span>
           </label>
           <input
-            type="text"
+            type="search"
+            name="search"
             placeholder="Rechercher"
             className="input input-bordered w-full max-w-xs"
-            onChange={debounce(onSearch, 1000)}
+            onChange={debounce((e) => onSearch(e.target.value), 1000)}
             defaultValue={search}
           />
         </div>
         <div className="w-44">
           <MilkTypesSelector
             milkTypes={milkTypes}
-            onChange={onSelectMilkType}
+            onChange={(e) => onSelectMilkType(e.target.value)}
             selectedMilkType={selectedMilkType}
           />
         </div>

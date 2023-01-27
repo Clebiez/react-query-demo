@@ -1,6 +1,5 @@
 import "./index.css";
 import React from "react";
-import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from "./App";
@@ -9,8 +8,10 @@ import reportWebVitals from "./reportWebVitals";
 import CheesesList from "./pages/CheesesList";
 import CheeseDetail from "./pages/CheeseDetail";
 import CheeseCreate from "./pages/CheeseCreate";
-
-render(
+import { createRoot } from "react-dom/client";
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
@@ -19,8 +20,7 @@ render(
         <Route path="/cheeses/create" element={<CheeseCreate />} />
       </Route>
     </Routes>
-  </BrowserRouter>,
-  document.getElementById("root")
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
