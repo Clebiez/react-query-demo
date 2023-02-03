@@ -8,6 +8,7 @@ const MilkTypesSelector = forwardRef(
         </label>
         <select
           className="select select-bordered"
+          name="milkTypeSelector"
           ref={ref}
           {...props}
           value={selectedMilkType ?? ""}

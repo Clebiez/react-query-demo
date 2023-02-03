@@ -22,11 +22,38 @@ describe("Given CheesesList Component", () => {
     expect(screen.getByText("Pas de fromage à affiner")).toBeVisible();
   });
 
-  it("When user select a milk type, Then should call onSelectMilkType", () => {
-    // TODO
+  it("When user select a milk type, Then should call onSelectMilkType", async () => {
+    const onSelectMilkType = jest.fn();
+    const user = userEvent.setup();
+    render(
+      <CheesesList
+        milkTypes={milkTypes}
+        cheeses={[]}
+        onSelectMilkType={onSelectMilkType}
+      />
+    );
+
+    await user.selectOptions(
+      screen.getByRole("combobox"),
+      screen.getByRole("option", { name: "Chèvre" })
+    );
+    expect(onSelectMilkType).toHaveBeenCalledTimes(1);
+    expect(onSelectMilkType).toHaveBeenCalledWith("2");
   });
 
-  it("When user search cheeses, Then should call onSearch", () => {
-    // TODO
+  it("When user search cheeses, Then should call onSearch", async () => {
+    jest.useFakeTimers();
+    const onSearch = jest.fn();
+    const user = userEvent.setup({ delay: null });
+
+    render(
+      <CheesesList milkTypes={[]} cheeses={cheeses} onSearch={onSearch} />
+    );
+    await user.type(screen.getByRole("searchbox"), "Couic couic");
+    jest.runAllTimers();
+    expect(onSearch).toHaveBeenCalledTimes(1);
+    expect(onSearch).toHaveBeenCalledWith("Couic couic");
+
+    jest.useRealTimers();
   });
 });

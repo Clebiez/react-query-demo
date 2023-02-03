@@ -1,3 +1,4 @@
+- Refaire un rapide tour de l'app
 - montrer setupTests.js
 - Dans Loader.test.js compléter le test en testant que coucou n'est pas visible puis l'est
 
@@ -36,7 +37,7 @@ it("When user click on vote button, Then should call onClickOnVoteCheese", async
 ```
 
 ```JavaScript
-jest.mock("../../../services/hooks/useCheeseIsVoted", () => {
+    jest.mock("../../../services/hooks/useCheeseIsVoted", () => {
     return () => ({
         cheeseIsVoted: true,
     });
@@ -97,7 +98,7 @@ it("When cheese has already been voted by the user, Then vote button should be d
         const onSelectMilkType = jest.fn();
         const user = userEvent.setup();
         render(
-        <CheesesList
+            <CheesesList
                 milkTypes={milkTypes}
                 cheeses={[]}
                 onSelectMilkType={onSelectMilkType}

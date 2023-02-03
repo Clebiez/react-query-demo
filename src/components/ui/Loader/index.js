@@ -5,9 +5,7 @@ const Loader = ({ isLoading, children }) => {
   const [showLoader, setShowLoader] = useState(false);
   useEffect(() => {
     if (!isLoading) {
-      setTimeout(() => {
-        setShowLoader(false);
-      }, 1000);
+      setShowLoader(false);
     } else {
       setShowLoader(true);
     }
